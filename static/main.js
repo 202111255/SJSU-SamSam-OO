@@ -23,9 +23,19 @@ function changeImage(event, element) {
     if (link) {
         window.location.href = link;
     }
-
-    
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const templateTabs = document.querySelectorAll('.logo');
+    templateTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const templateType = tab.dataset.template;
+            localStorage.setItem('selectedTemplate', templateType);
+            window.location.href = './main.html';
+        });
+    });
+});
+
 
 var preloadImages = function (srcs) {
     srcs.forEach(function (src) {

@@ -20,6 +20,7 @@ nav {
 
 .logo img {
     margin-left: 70px;
+    cursor: pointer;
 }
 
 ul {
