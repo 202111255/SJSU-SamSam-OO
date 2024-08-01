@@ -1,0 +1,22 @@
+.subscription_1 {
+    margin-left: 70px;
+}
+
+.subscription_box {
+    display: flex;
+    width: 700px;
+    flex-wrap: wrap;
+}
+
+.subscription_box img {
+    width: 350px;
+    cursor: pointer;
+}
+
+.subscription_5 {
+    width: 50px;
+}
+
+.detail_subscription {
+    width: 400px;
+}
