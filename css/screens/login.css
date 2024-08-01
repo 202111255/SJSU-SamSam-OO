@@ -1,0 +1,69 @@
+.login_content img {
+    margin-top: 20px;
+    position: absolute;
+    top: 10px;
+    left: 30px
+}
+
+login_content p {
+    text-align: center;
+}
+
+.loginHeader {
+    margin-top: 90px;
+    margin-bottom: 50px;
+    color: #f4acb7;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.login_input {
+    display: block;
+    margin-top: 15px;
+    width: 400px;
+    padding: 20px;
+    background-color: rgba(224, 222, 222, 0.532);
+    border: 0.1px solid lightgray;
+    border-radius: 15px;
+}
+
+.login_btn {
+    margin-top: 30px;
+    width: 400px;
+    height: 50px;
+    background: linear-gradient(to left, #f4acb7, #ffcede);
+    border: 0.1px solid lightgray;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.signup_btn {
+    margin-top: 8px;
+    width: 400px;
+    height: 50px;
+    background-color: #d8e2dc;
+    border: 0.1px solid lightgray;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.forget_password {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 550;
+    color: #f4acb7;
+    cursor: pointer;
+}
