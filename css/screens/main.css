@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    -ms-overflow-style: none; /* 인터넷 익스플로러 및 Edge */
+    scrollbar-width: none; /* Firefox */
 }
 
 body{
@@ -28,11 +30,15 @@ body{
     border-radius: 30px;
 }
 
+.content .home_2 {
+    margin-top: 20px;
+}
+
 
 .content .home_3 {
-    margin-top: 30px;
+    margin-top: 40px;
     border-radius: 0px;
-    background-image: linear-gradient(to bottom, #ffffff, #f3fee5);
+    background-image: linear-gradient(to bottom, #ffffff, #00000016);
 }
 
 .content .home_4 {
@@ -65,8 +71,8 @@ body{
 
 .slide img {
     margin-top: 20px;
-    margin-left: 30px;
-    width: 100px;
+    margin-left: 20px;
+    width: 600px;
     height: auto;
     object-fit: cover;
     border-radius: 0px;

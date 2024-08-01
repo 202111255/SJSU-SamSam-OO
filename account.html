@@ -9,7 +9,7 @@
     <title>ParentEase</title>
 </head>
 <body>
-    <!--좌측 네비게이션 바 이걸 중복해서 쓰도록하세요-->
+    <!-- 네이게이션바 -->
     <nav>
         <div class="logo">
             <img src="./img/logo.png" alt="Logo">
@@ -18,10 +18,48 @@
             <li><a href="./main.html" onclick="changeImage(event, this)"><img src="./img/Icon/home_icon.png" alt="Home"></a></li>
             <li><a href="./subscription.html" onclick="changeImage(event, this)"><img src="./img/Icon/subscribe.png"></a></li>
             <li><a href="./myBag.html" onclick="changeImage(event, this)"><img src="./img/Icon/my_bag.png"></a></li>
-            <li><a href="./account.html" onclick="changeImage(event, this)"><img src="./img/Icon/account_icon.png" alt="Idea"></a></li></a></li>
+            <li><a href="./account.html" onclick="changeImage(event, this)"><img src="./img/Icon/click_account_icon.png" alt="Idea"></a></li></a></li>
         </ul>
     </nav>
 
+    <div class="account_content">
+        <div class="container mx-auto mt-10 p-5 bg-white shadow-lg rounded-md">
+          <div class="tabs">
+            <button class="tab-button" onclick="openTab(event, 'profile')">My Profile</button>
+            <button class="tab-button" onclick="openTab(event, 'orders')">My Orders</button>
+            <button class="tab-button" onclick="openTab(event, 'address')">My Address</button>
+            <button class="tab-button" onclick="openTab(event, 'payment')">Payment Method</button>
+          </div>
+    
+          <div id="profile" class="tab-content">
+            <div class="box">
+                <img class="account_1" src="./img/account/account_1.png">
+            </div>
+          </div>
+    
+          <div id="orders" class="tab-content hidden">
+            <div class="box">
+                <img class="account_2" src="./img/account/account_2.png">
+            </div>
+          </div>
+    
+          <div id="address" class="tab-content hidden">
+            <div class="box">
+                <img class="account_3" src="./img/account/account_3.png">
+            </div>
+          </div>
+    
+          <div id="payment" class="tab-content hidden">
+            <div class="box">
+                <img class="account_4" src="./img/account/account_4.png">
+            </div>
+          </div>
+        </div>
+    </div>
 
-</body>
+
+        <script src="./static/account.js"></script>
+
+
+</div>
 </html>
