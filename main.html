@@ -3,151 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>별다줄</title>
+<title>ParentEase</title>
 <link rel="stylesheet" href="./css/style.css">
 <script type="module" src="./static/main.js"></script>
-<link rel="stylesheet" href="/path/to/flatpickr.min.css">
-<script src="/path/to/flatpickr.min.js"></script>
-<script src="https://kit.fontawesome.com/cccce09b52.js" crossorigin="anonymous"></script>
-<link rel="icon" href="./img/favicon.png"/>
+<link rel="icon" href="./img/favicon.ico"/>
+<script src="./static/main.js"></script>
 </head>
 <body>
 
-<!--좌측 네비게이션 바 이걸 중복해서 쓰도록하세요-->
+<!-- 네이게이션바 -->
 <nav>
     <div class="logo">
         <img src="./img/logo.png" alt="Logo">
     </div>
     <ul>
-        <li><a href="./main.html" onclick="changeImage(event, this)"><img src="./img/Icon/click_home_icon.png" alt="Home"></a></li>
-        <li><a href="./diary_template.html" onclick="changeImage(event, this)"><img src="./img/Icon/diary_icon.png" alt="Diary"></a></li>
-        <li><a href="./diary_check.html" onclick="changeImage(event, this)"><img src="./img/Icon/book_icon.png" alt="Book"></a></li>
-        <li><a href="./idea.html" onclick="changeImage(event, this)"><img src="./img/Icon/idea_icon.png" alt="Idea"></a></li>
-        <li class="bottom_nav_icon"><a href="./profile.html" onclick="changeImage(event, this)"><img src="./img/Icon/profile_icon.png" alt="Idea"></a></li>
+        <li><a href="./main.html" onclick="changeImage(event, this)"><img src="./img/Icon/home_icon.png"></a></li>
+        <li><a href="./subscription.html" onclick="changeImage(event, this)"><img src="./img/Icon/subscribe.png"></a></li>
+        <li><a href="./myBag.html" onclick="changeImage(event, this)"><img src="./img/Icon/my_bag.png"></a></li>
+        <li><a href="./account.html" onclick="changeImage(event, this)"><img src="./img/Icon/account_icon.png" alt="Idea"></a></li></a></li>
     </ul>
 </nav>
 
 <div class="content">
-    <h1>안녕하세요! <span id="username">User</span>님</h1>
-    <div></div>
+    <img class="home_1" src="./img/home/home_1.png">
+    <img class="home_2" src="./img/home/home_2.png">
+    <img class="home_3" src="./img/home/home_3.png">
+    <img class="home_4" src="./img/home/home_4.png">
+    <img class="home_5" src="./img/home/home_5.png">
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="./img/home/home_slide_1.png" alt="Image 1"></div>
+            <div class="slide"><img src="./img/home/home_slide_1.png" alt="Image 2"></div>
+            <div class="slide"><img src="./img/home/home_slide_1.png" alt="Image 3"></div>
+        </div>
+        <div class="dots">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
 </div>
 
-    <!-- 캘린더 -->
-    <div class="calendar">
-        <div class="calenderHeader">
-            <div class="month-year" id="monthYear"></div>
-            <button id="prevMonth">&lt;</button>
-            <button id="nextMonth">&gt;</button>
-        </div>
-        <table id="calendarTable">
-            <thead>
-                <tr>
-                    <th>SU</th>
-                    <th>MO</th>
-                    <th>TU</th>
-                    <th>WE</th>
-                    <th>TH</th>
-                    <th>FR</th>
-                    <th>SA</th>
-                </tr>
-            </thead>
-            <tbody id="calendarBody"></tbody>
-        </table>
-    </div>
-<!-- 오늘의 별다줄 -->
-    <div class="today">
-        <div class="todayHeader"><p>오늘의 별다줄</p></div>
-        <div class="todayContainer">
-            <ul>
-                <!-- <li>사용자 인증 모듈을 구현했습니다. 예상보다 시간이 오래 걸렸지만, 결국 모든 테스트를 통과했습니다.</li>
-                <li>신규 기능에 대한 코드를 리팩토링 했습니다. 성능이 향상되어 애플리케이션이 더 빠르게 작동합니다.</li>
-                <li>신규 기능에 대한 코드를 리팩토링 했습니다. 성능이 향상되어 애플리케이션이 더 빠르게 작동합니다.</li>
-                <li>신규 기능에 대한 코드를 리팩토링 했습니다. 성능이 향상되어 애플리케이션이 더 빠르게 작동합니다.</li>
-                <li>신규 기능에 대한 코드를 리팩토링 했습니다. 성능이 향상되어 애플리케이션이 더 빠르게 작동합니다.</li>
-                <li>신규 기능에 대한 코드를 리팩토링 했습니다. 성능이 향상되어 애플리케이션이 더 빠르게 작동합니다.</li> -->
-            </ul>
-        </div>
-    </div>
-<!-- 이달의 해시태그 -->
-    <div class="hashtag">
-        <!-- <div class="hashtagHeader"><p>이달의 해시태그</p></div>
-        <div class="hashContainer">
-            <div class="hash1">#프로젝트_별다줄</div>
-            <div class="hash2">#사용자 인증 모듈</div>
-        </div> -->
-        <div class="slider">
-            <div class="slides">
-                <div class="slide"><img src="./img/image1.png" alt="Image 1"></div>
-                <div class="slide"><img src="./img/image2.png" alt="Image 2"></div>
-                <div class="slide"><img src="./img/image3.png" alt="Image 3"></div>
-            </div>
-            <div class="dots">
-                <div class="dot active"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
-        </div>
-    </div>
-<!-- 가장 최근 기록으로 이동하기 -->
-    <div class="recent">
-        <div class="recentHeader">가장 최근 기록으로 <br>이동하기</div>
-        <i class="fa-solid fa-circle-chevron-right"></i>
-    </div>
-
-    <div class="writeBackground">
-        <div style="width: 1073px; height: 215px; left: 0px; top: 0px; position: absolute; background: linear-gradient(57deg, #181818 58%, rgba(104, 61, 229, 0.78) 100%); box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset; border-radius: 30px"></div>
-        <div style="width: 260px; height: 215px; left: 0px; top: 0px; position: absolute; background: linear-gradient(90deg, #11E5B3 0%, #181818 100%); border-top-left-radius: 30px; border-bottom-left-radius: 30px"></div>
-    </div>
-
-    <div class="write">
-        <div class="writeHeader">새로운<br>기록 작성</div>
-        <button class="templateButton" onclick="goToDiaryTemplate()">템플릿 더보기&nbsp;&nbsp;&nbsp;&nbsp;&gt;</button>
-
-        <div class="main_template_tab1" data-template="basic">
-            <div class="tab_header">
-                <h2>basic</h2>
-                <h3>기본템플릿</h3>
-            </div>
-            <div class="tab_footer">
-                <p>개발내용</p>
-                <p>느낀 점</p>
-                <p>특이사항</p>
-                <p>내일의 계획</p>
-            </div>
-        </div>
-        <div class="main_template_tab2" data-template="feature">
-            <div class="tab_header">
-                <h2>feature</h2>
-                <h3>신규 기능 개발</h3>
-            </div>
-            <div class="tab_footer">
-                <p>신규 기능</p>
-                <p>이용 방안</p>
-                <p>개선점</p>
-                <p>개발 계획</p>
-            </div>
-        </div>
-        <div class="main_template_tab3" data-template="docs">
-            <div class="tab_header">
-                <h2>docs</h2>
-                <h3>개발 문서 수정</h3>
-            </div>
-            <div class="tab_footer">
-                <p>추가된 내용</p>
-                <p>변경된 내용</p>
-                <p>관련 의견</p>
-                <p>문서 수정 계획</p>
-            </div>
-        </div>
-    </div>
-
-</div>
-<script>
-    function goToDiaryTemplate() {
-        var url = "./diary_template.html";
-        window.location.href = url;
-    }
-</script>
 
 
 </body>
